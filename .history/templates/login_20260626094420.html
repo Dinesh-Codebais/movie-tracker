@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Movie Tracker</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="login-page">
+
+    <div class="signup-box">
+
+        <h2>🎬 Movie Tracker</h2>
+        <p class="subtitle">Welcome Back</p>
+
+        <input type="email"
+               id="loginEmail"
+               placeholder="Email">
+
+        <input type="password"
+               id="loginPassword"
+               placeholder="Password">
+
+        <div class="show-pass">
+            <input type="checkbox"
+                   onclick="showLoginPassword()">
+            <label>Show Password</label>
+        </div>
+
+        <div class = "show-pass">
+            <input type 
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <div class="login-link">
+            ✨ New to Movie Tracker?
+          <a href="/signup">Create Account</a>
+        </div>
+
+    </div>
+
+   <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

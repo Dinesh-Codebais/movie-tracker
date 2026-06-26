@@ -1,0 +1,24 @@
+const userInfo = document.getElementById("userInfo");
+const loginNav = document.getElementById("loginNav");
+const signupNav = document.getElementById("signupNav");
+
+const currentUser = localStorage.getItem("name");
+
+if(currentUser){
+
+    if(userInfo){
+        userInfo.innerHTML = "👤 " + currentUser;
+    }
+
+    if(loginNav){
+        loginNav.style.display = "none";
+    }
+
+    if(signupNav){
+        signupNav.style.display = "none";
+    }
+
+    if(logoutBtn){
+        logoutBtn.style.display = "block";
+    }
+}

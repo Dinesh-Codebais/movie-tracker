@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Movie Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="signup-box">
+
+        <h2>🎬 Movie Tracker</h2>
+        <p class="subtitle">Create your account</p>
+
+        <input type="text"
+               id="signupName"
+               placeholder="Name">
+
+        <input type="email"
+               id="signupEmail"
+               placeholder="Email">
+
+        <input type="password"
+               id="signupPassword"
+               placeholder="Password">
+
+        <div class="show-pass">
+            <input type="checkbox"
+                   onclick="showSignupPassword()">
+            <label>Show Password</label>
+        </div>
+
+        <button onclick="signup()">
+            Create Account
+        </button>
+
+        <div class="login-link">
+            Already have an account?
+            <a href="login.html">Login Now</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

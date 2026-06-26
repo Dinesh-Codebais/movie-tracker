@@ -1,0 +1,528 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    background:#0f172a;
+    font-family:Arial, sans-serif;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links li{
+    display:flex;
+    align-items:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#e50914;
+    color:white;
+}
+
+
+#logoutBtn{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+#userInfo{
+    color:#facc15;
+    font-weight:bold;
+}
+
+.logo img {
+    height:100px;
+    width:auto;
+    cursor:pointer;
+}
+
+/* LINKS */
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:#e50914;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+    color:
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content p{
+    font-size:20px;
+    color:#d1d5db;
+    margin:20px 0;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#e50914;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SECTIONS */
+.trending,
+.features,
+.categories,
+.stats,
+.testimonials,
+.newsletter{
+    padding:80px 10%;
+}
+
+/* TITLES */
+h2{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* GRID SYSTEM */
+.movie-grid,
+.feature-grid,
+.category-grid,
+.stats-grid,
+.testimonial-grid{
+    display:grid;
+    gap:30px;
+}
+
+/* MOVIE CARDS */
+.movie-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.movie-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    display:block;
+}
+
+.movie-card h3{
+    color:white;
+    margin-top:15px;
+}
+
+.movie-card p{
+    color:#facc15;
+    margin:10px 0 20px;
+}
+
+.movie-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* FEATURE */
+.feature-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.feature-card,
+.category-card,
+.stat-card,
+.testimonial-card{
+    background:#1f2937;
+    padding:30px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+    transition:0.3s;
+}
+
+/* CATEGORY */
+.category-grid{
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+
+.category-card:hover{
+    background:#e50914;
+    transform:scale(1.05);
+}
+
+/* STATS */
+.stats-grid{
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+.stat-card h3{
+    color:#e50914;
+    font-size:40px;
+}
+
+/* TESTIMONIAL */
+.testimonial-grid{
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+/* NEWSLETTER */
+.newsletter{
+    text-align:center;
+}
+
+.newsletter-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+.newsletter{
+    color: white;
+}
+/* CTA */
+.cta{
+    padding:100px 10%;
+    text-align:center;
+    background:linear-gradient(135deg,#e50914,#ff3b3b);
+}
+
+.cta h2{
+    color:white;
+    font-size:45px;
+}
+
+.cta-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#e50914;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    background:#bc1545;
+    padding:60px 20px;
+    text-align:center;
+    color:white;
+}
+/* RESPONSIVE */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+}
+
+/* SMOOTH SCROLL */
+html{
+    scroll-behavior:smooth;
+}
+@keyframes fadeUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.watch-btn,
+.explore-btn{
+    width: 140px;        /* same size */
+    padding: 10px 0;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Watchlist button */
+.watch-btn{
+    background: #e50914;
+    color: white;
+}
+
+/* Explore button */
+.explore-btn{
+    background: #1f2937;
+    color: white;
+    border: 1px solid #e50914;
+}
+
+/* hover effect */
+.watch-btn:hover,
+.explore-btn:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.slider-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+    padding:40px 0;
+    gap:20px;
+}
+
+#slider-img{
+    width: 80%;
+    max-width: 800px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    transition: 0.6s ease;
+}
+#slider-img{
+    transition: opacity 0.4s ease-in-out;
+}
+#slider-img{
+    width: 80%;
+    max-width: 800px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+
+    transition: all 0.5s ease;
+}
+.watchlist h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.watchlist p{
+    color:#d1d5db;
+}
+
+
+.nav-links a.active {
+    color: #ff3c78;
+    font-weight: bold;
+    border-bottom: 2px solid #ff3c78;
+}
+/* =========================
+   MOVIE CARD UPGRADE
+========================= */
+
+.movie-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: contain;   /* 👈 important */
+    background: FFF4E1  /* empty space fill look */
+    border-radius: 12px;
+}
+
+.movie-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* =========================
+   WATCHLIST
+========================= */
+
+#watchlistMovies{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+#watchlistMovies li{
+    background:#1f2937;
+    color:white;
+    padding:12px;
+    margin:10px auto;
+    width:300px;
+    border-radius:10px;
+    font-weight:bold;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   SLIDER
+========================= */
+
+#slider-img{
+    width:300px;
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(229,9,20,0.5);
+    transition:0.5s;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+    background:#111;
+    color:white;
+}
+
+body.dark .navbar{
+    background:#000;
+}
+
+body.dark .movie-card{
+    background:#222;
+}
+
+body.dark .feature-card,
+body.dark .category-card,
+body.dark .stat-card,
+body.dark .testimonial-card{
+    background:#222;
+}
+
+body.dark .watchlist{
+    background:#000;
+}
+
+body.dark #watchlistMovies li{
+    background:#333;
+    color:white;
+}
+
+body.dark .footer{
+    background:#000;
+}
+body{
+    padding-top:80px;
+}
+.form-box{
+    width:350px;
+    margin:100px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.form-box input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.form-box button{
+    width:100%;
+    padding:10px;
+    cursor:pointer;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #111827;
+    min-width: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li{
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu a{
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+
+
+
+
